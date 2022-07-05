@@ -4,7 +4,7 @@
 int main()
 {
     int i=0,count=0;
-    char databits[10];
+    char databits[7];
     printf("Enter Data Bits : \n");
     scanf("%s",databits);
 
