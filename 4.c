@@ -4,7 +4,7 @@
 int main()
 {
     int i=0,count=0;
-    char databits[8];
+    char databits[10];
     printf("Enter Data Bits : \n");
     scanf("%s",databits);
 
@@ -13,10 +13,12 @@ int main()
 
     for ( i = 0; i < strlen(databits); i++)
     {
-        if(databits[i] == 1)
+        if(databits[i] == '1')
             count++;
     }
-    
+    // count = strlen(databits);
+    printf(" \nCount%d",count);
+
     if(count % 2 == 0)
         databits[7]='0';
     else

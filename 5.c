@@ -13,7 +13,7 @@ int main()
 
     for ( i = 0; i < strlen(databits); i++)
     {
-        if(databits[i] == 1)
+        if(databits[i] == '1')
             count++;
     }
     
