@@ -1,3 +1,5 @@
+// Charcter Count
+
 #include <stdio.h>
 #include <string.h>
 

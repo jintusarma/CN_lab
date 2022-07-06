@@ -1,10 +1,12 @@
+// Even Parity 
+
 #include<stdio.h>
 #include<string.h>
 
 int main()
 {
     int i=0,count=0;
-    char databits[7];
+    char databits[8];
     printf("Enter Data Bits : \n");
     scanf("%s",databits);
 
@@ -16,13 +18,17 @@ int main()
         if(databits[i] == '1')
             count++;
     }
-    // count = strlen(databits);
-    printf(" \nCount%d",count);
+    // printf(" \nCount%d",count);
 
     if(count % 2 == 0)
+    {
         databits[7]='0';
+        databits[8]='\0';
+    }
     else
+    {
         databits[7]='1';
-
+        databits[8]='\0';
+    }
     printf("\nData Bits After adding parity bit :\t%s",databits);
 }
