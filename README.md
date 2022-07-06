@@ -8,3 +8,15 @@
 8. send 2 no and operator and recive reply with a result
 9. Netstat , ping , ipconfig
 10. 3-way handshaking
+
+7,8 run
+gcc server.c -o Server
+./Server 5000
+
+
+
+gcc client.c -o Client
+./Client 127.0.0.1 5000
+
+
+6 run
