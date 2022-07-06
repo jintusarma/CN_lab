@@ -10,12 +10,14 @@
 10. 3-way handshaking
 
 7,8 run
-gcc server.c -o Server
+gcc server.c -o Server \n
+
 ./Server 5000
 
 
+ 
+gcc client.c -o Client.  \n
 
-gcc client.c -o Client
 ./Client 127.0.0.1 5000
 
 
